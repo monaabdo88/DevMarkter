@@ -7,7 +7,6 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>DevMarketer - MANAGEMENT</title>
 
     <!-- Styles -->
@@ -15,15 +14,25 @@
     @yield('styles')
 </head>
 <body>
-
-    @include('_includes.nav.main')
-
-    @include('_includes.nav.manage')
-
-    <div id="app">
-      @yield('content')
-    </div>
-
+  @include('_includes.nav.main')
+      <div class="columns p-t-50 p-b-50">
+        <div class="column is-one-quarter p-l-25">
+          @include('_includes.nav.manage')
+        </div>
+          <div class="column is-three-quarters p-r-25">
+            <div id="app">
+              @yield('content')
+            </div>
+          </div>
+      </div>
+    
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Tech News</strong> by <a href="https://mona-abdo.com">Monaabdo</a>.
+        </p>
+      </div>
+    </footer>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('scripts')

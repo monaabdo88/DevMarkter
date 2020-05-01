@@ -22636,3 +22636,7 @@ button.nav-item.is-active {
   overflow-y: scroll;
 }
 
+.dashboard-content {
+  background-color: lightgrey;
+}
+

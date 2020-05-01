@@ -20,8 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
-Route::group(['prefix' => 'manage'], function () {
-    Route::get('/dashboard','ManageController@dashboard')->name('manage.dashboard');
+Route::group(['prefix'=>'manage','middleware' => ['auth','role:supperadministrator|administrator|editor|author|contributor']], function () {
+    Route::get('/', 'ManageController@index');
+    Route::get('/dashboard', 'ManageController@dashboard')->name('manage.dashboard');
+    Route::resource('/users', 'UserController');
 });
-
 Route::get('/home', 'HomeController@index')->name('home');

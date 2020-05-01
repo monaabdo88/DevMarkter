@@ -15228,27 +15228,14 @@ module.exports = __webpack_require__(102);
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_buefy__ = __webpack_require__(101);
-
 __webpack_require__(74);
-
 window.Vue = __webpack_require__(97);
 
-
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy__["a" /* default */]);
-
-// Vue.component('example', require('./components/Example.vue'));
-
-var app = new Vue({
+/*let app = new Vue({
   el: '#app',
   data: {}
-});
-
-$(document).ready(function () {
-  //  Dropdowns
-  $('.dropdown').hover(function (e) {
-    $(this).toggleClass('is-open');
-  });
-});
+});*/
 
 /***/ }),
 /* 74 */

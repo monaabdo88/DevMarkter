@@ -15,13 +15,17 @@
     @yield('styles')
 </head>
 <body>
-
     @include('_includes.nav.main')
-
     <div id="app">
       @yield('content')
     </div>
-
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Tech News</strong> by <a href="https://mona-abdo.com">Monaabdo</a>.
+        </p>
+      </div>
+    </footer>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('scripts')
