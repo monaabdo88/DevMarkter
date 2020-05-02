@@ -14,7 +14,7 @@ class PermissionController extends Controller
      */
     public function index()
     {
-        $permissions = Permission::paginate(10);
+        $permissions = Permission::orderBy('id', 'desc')->paginate(10);
         return view('manage.permissions.index')->withPermissions($permissions);
     }
 
@@ -109,7 +109,17 @@ class PermissionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'display_name' => 'required|max:255',
+            'description' => 'sometimes|max:255'
+          ]);
+          $permission = Permission::findOrFail($id);
+          $permission->display_name = $request->display_name;
+          $permission->description = $request->description;
+          $permission->save();
+    
+          Session::flash('success', 'Updated the '. $permission->display_name . ' permission.');
+          return redirect()->route('permissions.show', $id);
     }
 
     /**

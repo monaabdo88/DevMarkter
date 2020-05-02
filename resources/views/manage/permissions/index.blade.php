@@ -38,4 +38,5 @@
       </div>
     </div> <!-- end of .card -->
   </div>
+  {{$permissions->links('vendor.pagination.default')}}
 @endsection
