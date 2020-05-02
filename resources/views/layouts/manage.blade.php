@@ -15,11 +15,11 @@
 </head>
 <body>
   @include('_includes.nav.main')
-      <div class="columns p-t-50 p-b-50">
-        <div class="column is-one-quarter p-l-25">
+      <div class="columns dashboard-index">
+        <div class="column dashboard-aside p-l-25  p-t-50 p-b-50">
           @include('_includes.nav.manage')
         </div>
-          <div class="column is-three-quarters p-r-25">
+          <div class="column dashboard-content is-four-fifths p-r-25  p-t-50 p-b-50" style="background-color:#e8e6a6">
             <div id="app">
               @yield('content')
             </div>

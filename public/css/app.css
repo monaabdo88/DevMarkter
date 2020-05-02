@@ -11530,7 +11530,7 @@ a.navbar-item.is-active,
 }
 
 .navbar-item img {
-  max-height: 1.75rem;
+  max-height: 2.75rem;
 }
 
 .navbar-item.has-dropdown {
@@ -22628,6 +22628,10 @@ button.nav-item.is-active {
   padding-right: 100px;
 }
 
+.dashboard-index {
+  margin-bottom: 0 !important;
+}
+
 .side-menu {
   position: fixed;
   height: 100vh;
@@ -22637,6 +22641,16 @@ button.nav-item.is-active {
 }
 
 .dashboard-content {
-  background-color: lightgrey;
+  background-color: #e8e6a6;
+}
+
+.dashboard-aside {
+  background-color: #dad380;
+  border-right: 2px solid white;
+}
+
+.footer {
+  background-color: #ffdd57;
+  padding-bottom: 3rem;
 }
 

@@ -1,3 +1,6 @@
+.dashboard-index{
+  margin-bottom:0 !important;
+}
 .side-menu {
   position: fixed;
   height: 100vh;
@@ -6,5 +9,13 @@
   overflow-y: scroll;
 }
 .dashboard-content{
-  background-color:lightgrey;
+  background-color:#e8e6a6;
+}
+.dashboard-aside{
+  background-color:#dad380;
+  border-right:2px solid white;
+}
+.footer{
+  background-color:#ffdd57;
+  padding-bottom:3rem;
 }

@@ -3,8 +3,14 @@
       General
     </p>
     <ul class="menu-list">
-      <li><a class="is-active" href="{{route('manage.dashboard')}}">Dashboard</a></li>
-    <li><a href="{{route('users.index')}}">Customers</a></li>
+      <li><a href="{{route('manage.dashboard')}}">Dashboard</a></li>
+    </ul>
+      <p class="menu-label">
+        Administration
+      </p>
+    <ul class="menu-list">
+      <li><a href="{{route('users.index')}}">Users</a></li>
+      <li><a href="{{route('permissions.index')}}">Roles & Permssions</a></li>
     </ul>
   </aside>
 
